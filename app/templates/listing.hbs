@@ -1,0 +1,15 @@
+<div class ="well">
+<h2>{{model.title}}-${{model.price}}({{model.location}})</h2>
+
+
+<p>{{model.body}}</p>
+Posted by:{{model.name}}
+<p>
+  {{model.email}}
+</p>
+Phone No:{{model.phone}}
+<br>
+
+{{update-listing listing=model update="update"}}
+<button name="delete">Delete</button>
+</div>

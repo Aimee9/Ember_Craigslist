@@ -2,8 +2,9 @@
 
 <ul>
   {{#each model.listings as |listing|}}
-     <li>{{current-date}}    {{listing.title}}-{{listing.price}}</li>
+     <li>{{#link-to 'listing' listing.id}}{{current-date}}    {{listing.title}}-${{listing.price}}{{/link-to}}</li>
   {{/each}}
 </ul>
 
-{{new-listing save="save" category=model}}
+{{new-listing save="save" category=model }}
+{{outlet}}
