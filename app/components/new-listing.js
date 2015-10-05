@@ -7,7 +7,7 @@ export default Ember.Component.extend({
       this.set('addNewListing', true);
     },
 
-    save() {
+    save(category) {
       var params = {
         name: this.get('name'),
         email: this.get('email'),
@@ -18,7 +18,7 @@ export default Ember.Component.extend({
         price: this.get('price'),
       };
       this.set('addNewListing', false),
-      this.sendAction('save', params);
+      this.sendAction('save', params, category);
     }
   }
 });

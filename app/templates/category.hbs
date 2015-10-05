@@ -1,9 +1,9 @@
 <h2>{{model.title}} Listings</h2>
 
 <ul>
-  {{#each model as |listing|}}
-     <li>{{listing.date}}{{listing.title}}-{{listing.price}}</li>
+  {{#each model.listings as |listing|}}
+     <li>{{current-date}}    {{listing.title}}-{{listing.price}}</li>
   {{/each}}
 </ul>
 
-{{new-listing save="save"}}
+{{new-listing save="save" category=model}}
