@@ -1,0 +1,16 @@
+/*.well {
+  background: lightgrey;
+  border-left: 1px #ccc;
+  border-right: 1px #ccc;
+}*/
+
+
+.row {
+  margin-right: 10px;
+  margin-left: 10px;
+  margin-top: 10px;
+}
+
+.col-md-3 {
+  background: lightgrey;
+}
