@@ -10,6 +10,6 @@ Posted by:{{model.name}}
 Phone No:{{model.phone}}
 <br>
 
-{{update-listing listing=model update="update"}}
-<button name="delete">Delete</button>
+{{update-listing listing=model update="update" }}
+<button {{action 'delete' model}}>Delete</button>
 </div>

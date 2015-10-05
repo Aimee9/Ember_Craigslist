@@ -14,6 +14,16 @@ export default Ember.Route.extend({
       });
       listing.save();
       this.transitionTo('category');
+    },
+    delete(listing) {
+      if (confirm('Are you sure you want to delete this listing?')) {
+        this.send('destroyListing', listing);
+      }
+    },
+
+    destroyListing(listing) {
+      listing.destroyRecord();
+      this.transitionTo('index');
     }
   }
 });
