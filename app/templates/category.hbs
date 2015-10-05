@@ -1,10 +1,12 @@
 <h2>{{model.title}} Listings</h2>
-
+<div class="well">
 <ul>
+
   {{#each model.listings as |listing|}}
      <li>{{#link-to 'listing' listing.id}}{{current-date}}    {{listing.title}}-${{listing.price}}{{/link-to}}</li>
   {{/each}}
-</ul>
 
+</ul>
+</div>
 {{new-listing save="save" category=model }}
 {{outlet}}
