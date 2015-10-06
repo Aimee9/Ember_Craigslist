@@ -11,5 +11,8 @@ Phone No:{{model.phone}}
 <br>
 
 {{update-listing listing=model update="update" }}
+<br>
 <button {{action 'delete' model}}>Delete</button>
+
+Posted:{{format-relative model.date_added}}
 </div>

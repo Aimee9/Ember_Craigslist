@@ -3,7 +3,7 @@
 <ul>
 
   {{#each model.listings as |listing|}}
-     <li>{{#link-to 'listing' listing.id}}{{current-date}}    {{listing.title}}-${{listing.price}}{{/link-to}}</li>
+     <li>{{#link-to 'listing' listing.id}}{{format-date listing.date_added}}    {{listing.title}}-${{listing.price}}{{/link-to}}</li>
   {{/each}}
 
 </ul>
