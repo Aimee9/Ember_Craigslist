@@ -1,4 +1,24 @@
-<div class ="well">
+<header class="listing-header">
+  <nav class="breadcrumbs-container">
+    <ul class="breadcrumbs">
+      <li class="crumb section">
+        <a href="/">Portland</a>
+        <span class="breadcrumb-arrow">></span>
+      </li>
+      <li class="crumb section">
+        <a href="/category/0">Category List</a>
+      </li>
+
+    </ul>
+
+  </nav>
+
+</header>
+
+
+<section class="body">
+
+
 <h2>{{model.title}}-${{model.price}}({{model.location}})</h2>
 
 
@@ -15,4 +35,4 @@ Phone No:{{model.phone}}
 <button {{action 'delete' model}}>Delete</button>
 
 Posted:{{format-relative model.date_added}}
-</div>
+</section>

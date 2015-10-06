@@ -20,3 +20,46 @@ ul
     list-style-type: none;
 
 }
+
+
+.breadcrumbs-container {
+      float: left;
+      font-size: .9375em;
+      min-height: 1.3em;
+      position: relative;
+  }
+
+.breadcrumbs-container ul{
+      margin: 0;
+      padding-left: 0;
+      list-style: none outside none;
+  }
+
+.breadcrumbs-container .breadcrumbs .crumb {
+      float: left;
+      margin-right: 5px;
+  }
+
+  .listing-header {
+      border-bottom: 1px #ccc solid;
+      background: #eee;
+      height: 1.925em;
+      line-height: 1.925em;
+      min-height: 1.1em;
+      padding: .3125em 0;
+      width: 100%;
+      z-index: 1001;
+  }
+
+  section.body {
+    padding: .5em 8px 2em;
+    width: 768px;
+    margin: 0 auto;
+    height: 90%;
+    min-height: 600px;
+}
+
+.map-display {
+  height: 600px;
+  width: 600px;
+}
